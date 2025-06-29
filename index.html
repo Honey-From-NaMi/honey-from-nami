@@ -55,7 +55,41 @@
 
 <section id="order">
   <h2>Order Form</h2>
-  <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfYourFormID/viewform?embedded=true">Loading…</iframe>
+<section id="order">
+  <h2>Order Form</h2>
+  <form action="https://formspree.io/f/mqabnzqn" method="POST" style="background:#fff8dd; padding:1.5em; border-radius:10px; box-shadow:0 2px 5px rgba(0,0,0,0.1); max-width:600px; margin:auto;">
+    
+    <label for="name">Full Name:</label><br/>
+    <input type="text" id="name" name="name" required style="width:100%; padding:.5em; margin-bottom:1em;"><br/>
+
+    <label for="email">Email:</label><br/>
+    <input type="email" id="email" name="email" required style="width:100%; padding:.5em; margin-bottom:1em;"><br/>
+
+    <label for="phone">Phone Number:</label><br/>
+    <input type="tel" id="phone" name="phone" required style="width:100%; padding:.5em; margin-bottom:1em;"><br/>
+
+    <label for="product">Select Product:</label><br/>
+    <select id="product" name="product" required style="width:100%; padding:.5em; margin-bottom:1em;">
+      <option value="">-- Please choose --</option>
+      <option value="Honey 32oz">Honey – 32 oz</option>
+      <option value="Propolis">Propolis</option>
+      <option value="Beeswax">Beeswax</option>
+      <option value="Queen Bee">Queen Bee</option>
+      <option value="Royal Jelly">Royal Jelly</option>
+      <option value="10-Frame Hive">10-Frame Hive</option>
+      <option value="5-Frame Nuc">5-Frame Nuc</option>
+    </select>
+
+    <label for="quantity">Quantity:</label><br/>
+    <input type="number" id="quantity" name="quantity" min="1" max="99" value="1" required style="width:100%; padding:.5em; margin-bottom:1em;"><br/>
+
+    <label for="notes">Additional Notes:</label><br/>
+    <textarea id="notes" name="notes" rows="4" style="width:100%; padding:.5em; margin-bottom:1em;" placeholder="Delivery instructions, pickup time, etc."></textarea><br/>
+
+    <button type="submit" style="background:#ffa500; color:white; padding:.7em 1.5em; border:none; border-radius:5px; font-weight:bold;">Submit Order</button>
+  </form>
+</section>
+ /* <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfYourFormID/viewform?embedded=true">Loading…</iframe>/*
 </section>
 
 <section id="contact">
