@@ -127,5 +127,29 @@
   &copy; 2025 Honey from NAMI | Made with love by our bees 🐝
 </footer>
 
+<script>
+  // Предзаполнение формы по параметру в URL
+  window.addEventListener('DOMContentLoaded', () => {
+    const hashParams = window.location.hash.split('?');
+    if (hashParams.length > 1) {
+      const params = new URLSearchParams(hashParams[1]);
+      const product = params.get('product');
+      if (product) {
+        const select = document.getElementById('product');
+        for (let i = 0; i < select.options.length; i++) {
+          if (select.options[i].value === product) {
+            select.selectedIndex = i;
+            break;
+          }
+        }
+        // Скролл к форме
+        const formSection = document.getElementById('order');
+        if (formSection) formSection.scrollIntoView({ behavior: 'smooth' });
+      }
+    }
+  });
+</script>
+
+  
 </body>
 </html>
