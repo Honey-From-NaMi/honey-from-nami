@@ -34,18 +34,25 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 2em; /* пространство между картинкой и текстом */
+  gap: 1.5em;
   padding: 2em;
   background-color: #fff8dd;
-  border-radius: 0px;
+  flex-wrap: wrap;
 }
+
 .hero img {
-  max-width: 200px; /* немного меньше */
+  max-width: 100px;
   width: 100%;
   height: auto;
-  border-radius: 0; /* убираем скругления */
-  box-shadow: none; /* убираем тень */
+  border-radius: 0;
+  box-shadow: none;
 }
+
+.hero h2 {
+  margin: 0;
+  text-align: center;
+}
+
     
     section { max-width:800px; margin:2em auto; padding:0 1em; }
     .product { background:#fff8dd; border-radius:10px; padding:1em; box-shadow:0 2px 5px rgba(0,0,0,0.1); }
@@ -69,7 +76,9 @@
 <div class="hero">
   <img src="bee_honey.png" alt="Bee and Honey">
   <h2>Pure, Natural, Hand‑Harvested Honey</h2>
+  <img src="bees_comb.png" alt="Bees on Comb">
 </div>
+
   
 <!-- <div class="hero">
   <h2>Pure, Natural, Hand‑Harvested Honey</h2>
