@@ -27,10 +27,26 @@
     body { margin:0; font-family:'Segoe UI',sans-serif; background:#fffdf4; color:#333; }
     header { background:#f4c430; padding:1em; text-align:center; }
     header h1 { margin:0; } 
-    .hero { text-align: center; padding: 2em; background-color: #fff8dd;
-          <!--   background-image: url('https://www.transparenttextures.com/patterns/light-honeycomb.png'); -->
-          background-repeat: repeat; background-size: auto; border-radius: 0px;}
-    .hero img { max-width:400px; width:100%; height:auto; border-radius:10px; box-shadow:0 0 10px rgba(0,0,0,0.2);}
+    <!-- .hero { text-align: center; padding: 2em; background-color: #fff8dd; background-repeat: repeat; background-size: auto; border-radius: 0px;}
+    .hero img { max-width:400px; width:100%; height:auto; border-radius:10px; box-shadow:0 0 10px rgba(0,0,0,0.2);} -->
+
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2em; /* пространство между картинкой и текстом */
+  padding: 2em;
+  background-color: #fff8dd;
+  border-radius: 0px;
+}
+.hero img {
+  max-width: 200px; /* немного меньше */
+  width: 100%;
+  height: auto;
+  border-radius: 0; /* убираем скругления */
+  box-shadow: none; /* убираем тень */
+}
+    
     section { max-width:800px; margin:2em auto; padding:0 1em; }
     .product { background:#fff8dd; border-radius:10px; padding:1em; box-shadow:0 2px 5px rgba(0,0,0,0.1); }
     .gallery { display:flex; flex-wrap:wrap; gap:1em; justify-content:center; margin-top:1em; }
@@ -51,9 +67,14 @@
 </header>
 
 <div class="hero">
+  <img src="bee_honey.png" alt="Bee and Honey">
+  <h2>Pure, Natural, Hand‑Harvested Honey</h2>
+</div>
+  
+<!-- <div class="hero">
   <h2>Pure, Natural, Hand‑Harvested Honey</h2>
   <img src="bee_honey.png" alt="Bee and Honey">
-</div>
+</div> -->
 
 <section>
   <h2>Our Honey</h2>
